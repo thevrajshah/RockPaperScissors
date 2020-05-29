@@ -37,8 +37,17 @@
         else if (playerSelection == paper && computerSelection == rock) {
             alert("Computer Chooses " + computerSelection.toLowerCase() + ". Damn Boi! You got skills.");
         }
+        else if (playerSelection == paper && computerSelection == paper) {
+            alert("Computer Chooses " + computerSelection.toLowerCase() + ". You chose the same as me! Try Again.");
+        }
+	    else if (playerSelection == rock && computerSelection == rock) {
+            alert("Computer Chooses " + computerSelection.toLowerCase() + ". You chose the same as me! Try Again.");
+        }
+	    else if (playerSelection == scissor && computerSelection == scissor) {
+            alert("Computer Chooses " + computerSelection.toLowerCase() + ". You chose the same as me! Try Again.");
+        }
         else {
-            alert("Computer Chooses " + computerSelection.toLowerCase() + ". Don't Mess with me DumbFuck. Try Again")
+            alert(". Don't Mess with me DumbFuck. Try Again")
         }
     }
     function game() {
